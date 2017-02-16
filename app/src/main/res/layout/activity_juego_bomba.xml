@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_juego_bomba"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.salva.bomba.Juego_bomba">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pre1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pre1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/br11"
+        android:onClick="win" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/br11"
+        android:layout_toRightOf="@+id/br11"
+        android:layout_toEndOf="@+id/br11"
+        android:id="@+id/br12" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/br12"
+        android:layout_toRightOf="@+id/br12"
+        android:layout_toEndOf="@+id/br12"
+        android:id="@+id/br13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/br11"
+        android:layout_marginTop="34dp"
+        android:id="@+id/pre2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/br21"
+        android:layout_toLeftOf="@+id/br13"
+        android:layout_toStartOf="@+id/br13"
+        android:id="@+id/br22" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/br22"
+        android:layout_alignRight="@+id/br13"
+        android:layout_alignEnd="@+id/br13"
+        android:id="@+id/br23" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/pre3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pre3"
+        android:layout_toLeftOf="@+id/br22"
+        android:layout_toStartOf="@+id/br22"
+        android:layout_marginTop="27dp"
+        android:id="@+id/br31" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/br31"
+        android:layout_toRightOf="@+id/br31"
+        android:layout_toEndOf="@+id/br31"
+        android:id="@+id/br32" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/br32"
+        android:layout_alignRight="@+id/br23"
+        android:layout_alignEnd="@+id/br23"
+        android:id="@+id/br33" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:id="@+id/br21"
+        android:layout_below="@+id/pre2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/br31"
+        android:layout_marginTop="32dp"
+        android:id="@+id/msg"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="36sp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif"
+        android:layout_above="@+id/otra" />
+
+    <Button
+        android:text="Otra vez"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/otra"
+        android:onClick="otravez"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/br32"
+        android:layout_toEndOf="@+id/br32" />
+</RelativeLayout>
